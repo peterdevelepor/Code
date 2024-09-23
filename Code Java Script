@@ -1,0 +1,125 @@
+// exercicio 1
+var numaluno;
+var cumprimentos;
+
+numaluno = "13";
+cumprimentos = "Bem-vindo à aula de programação " + numaluno + ". Isto até parece fácil.";
+
+console.log(cumprimentos);
+
+// A variável `resposta` não está definida antes de ser usada.
+// console.log(resposta); // Esta linha foi comentada
+
+// exercicio 2
+var disciplina1;
+var disciplina2;
+var nota1;
+var nota2;
+var media;
+var resposta;
+
+disciplina1 = "programação";
+disciplina2 = "matemática";
+
+nota1 = 16;
+nota2 = 14;
+
+// Correção na fórmula da média
+media = (nota1 + nota2) / 2;
+
+resposta = "A média da nota de " + disciplina1 + " que a nota foi " + nota1 + " com a disciplina " + disciplina2 + " que a nota foi " + nota2 + " o total deu " + media + " valores";
+
+console.log(disciplina1);
+console.log(disciplina2);
+console.log(nota1);
+console.log(nota2);
+console.log(media);
+
+// exercicio 3
+var preco1 = 3.99; // Correção no nome da variável
+var taxadeiva;
+var total;
+
+taxadeiva = 23;
+
+// Correção na fórmula para calcular o total com o IVA
+total = preco1 * (1 + taxadeiva / 100);
+
+console.log(preco1);
+console.log(taxadeiva);
+console.log(total);
+
+// exercicio 4
+var lado1 = 5;
+var lado2 = 10;
+
+// Correção na fórmula da área e do perímetro
+var area = lado1 * lado2;
+var perimetro = 2 * (lado1 + lado2);
+
+console.log(lado1);
+console.log(lado2);
+console.log(area);
+console.log(perimetro);
+
+// exercicio 5
+var numero = 7;
+if (numero % 2 === 0) {
+    console.log("O número " + numero + " é par");
+} else {
+    console.log("O número " + numero + " é ímpar");
+}
+
+// exercicio 6 
+var kilogramas = 1.500;
+var gramas = kilogramas * 1000;
+
+console.log("A conversão de " + kilogramas + " kg para gramas é " + gramas);
+
+// exercicio 7 
+var salariobruto = 200;
+var taxatotaldesconto = 33.0 / 100;
+
+// Correção na declaração dos descontos
+var descontos = salariobruto * taxatotaldesconto;
+
+console.log("Os descontos são: " + descontos);
+
+// exercicio 8
+var fahreneit = 30.6;
+// Correção na fórmula para converter Fahrenheit para Celsius
+var celsius = (fahreneit - 32) * 5 / 9;
+
+console.log("A conversão de " + fahreneit + "ºF para Celsius é: " + celsius.toFixed(2));
+
+// exercicio 9 
+var num = 937;
+var centenas = Math.floor(num / 100);
+var dezenas = Math.floor((num % 100) / 10);
+var unidades = num % 10;
+
+console.log("O número " + num + " é composto por " + centenas + " centenas, " + dezenas + " dezenas e " + unidades + " unidades.");
+
+// exercicio 10
+var base = 10;
+var altura = 12;
+// Correção na fórmula da área do triângulo
+var area = (base * altura) / 2;
+
+console.log("A área do triângulo retângulo é: " + area);
+
+// exercicio 11
+var raio = 5;
+var altura = 2;
+// Correção na fórmula do volume (uso da potenciação correta)
+var volume = 3.14159 * Math.pow(raio, 2) * altura;
+
+console.log("O volume da lata de óleo é: " + volume);
+
+// exercicio 12
+const total_segundos = 5741;
+const horas = Math.floor(total_segundos / 3600);
+const minutos = Math.floor((total_segundos % 3600) / 60);
+const segundos = total_segundos % 60;
+
+console.log(`Horas: ${horas} | Minutos: ${minutos} | Segundos: ${segundos}`);
